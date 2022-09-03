@@ -24,6 +24,10 @@ Create `worker` conda environment:
 ```
 conda env create -f environment.yaml
 ```
+or easier to remember:
+```
+bash ./install_environment.sh
+```
 
 Activate `worker` conda environment:
 ```
