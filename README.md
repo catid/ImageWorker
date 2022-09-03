@@ -4,7 +4,7 @@ Work queue system for running ML inference to generate images in Python on a clu
 
 ## Overview
 
-W
+We h
 
 ## Prerequisites
 
@@ -17,6 +17,8 @@ The Nvidia CUDA drivers need to be installed.  I'm using the Ubuntu 515 driver p
 Any prerequisites like Python3 need to be installed using `apt install`.
 
 Each node needs a `rabbit-mq` server running.  I got it installed by running `bash install_rabbitmq.sh`
+
+The master server should run nginx web server: https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
 
 ## Worker setup
 
@@ -43,4 +45,6 @@ The master node should run the front-end API:
 ```
 python master.py
 ```
+
+The master node should also run the website.
 
