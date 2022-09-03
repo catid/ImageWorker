@@ -16,7 +16,7 @@ The Nvidia CUDA drivers need to be installed.  I'm using the Ubuntu 515 driver p
 
 Any prerequisites like Python3 need to be installed using `apt install`.
 
-Each node needs a `rabbit-mq` server running: https://www.rabbitmq.com/download.html
+Each node needs a `rabbit-mq` server running.  I got it installed by running `bash install_rabbitmq.sh`
 
 ## Worker setup
 
@@ -34,3 +34,9 @@ Run worker Python script:
 ```
 python worker.py
 ```
+
+The master node should run the front-end API:
+```
+python master.py
+```
+
