@@ -5,7 +5,7 @@
 # Install erlang
 curl -fsSL https://github.com/rabbitmq/signing-keys/releases/download/2.0/rabbitmq-release-signing-key.asc | sudo apt-key add -
 sudo apt-get install apt-transport-https
-echo "deb http://dl.bintray.com/rabbitmq-erlang/debian xenial erlang-22.x" >  | sudo tee  /etc/apt/sources.list.d/bintray.erlang.list > /dev/null
+#echo "deb http://dl.bintray.com/rabbitmq-erlang/debian xenial erlang-22.x" >  | sudo tee  /etc/apt/sources.list.d/bintray.erlang.list > /dev/null
 sudo apt-get update -y
 sudo apt-get install -y erlang-base \
                     erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets \
