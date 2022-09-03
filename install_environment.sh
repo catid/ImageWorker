@@ -1,2 +1,2 @@
 #!/bin/sh
-conda env create -f environment.yaml
+conda env create --force -f environment.yaml
