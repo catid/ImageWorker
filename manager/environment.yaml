@@ -1,0 +1,10 @@
+name: manager
+channels:
+  - defaults
+dependencies:
+  - python=3.8.5
+  - pip=20.3
+  - pip:
+    - tornado
+    - celery
+    - opencv-python==4.1.2.30
