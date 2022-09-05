@@ -4,7 +4,9 @@ Work queue system for running ML inference to generate images in Python on a clu
 
 ## Overview
 
-We h
+To view the output pictures, we use PhotoPrism running on the manager node: https://docs.photoprism.app/getting-started/docker-compose/
+
+A manager node runs a React app `manager_app`, which communicates with a Python/Tornado API `manager.py` to queue up more work via Python/Celery, which distributes load using RabbitMQ to one Python script for each GPU `worker.py` that each launch image generation on the GPUs.  The resulting images and generation parameters are automatically pushed to PhotoPrism on the manager node.
 
 ## Prerequisites
 
